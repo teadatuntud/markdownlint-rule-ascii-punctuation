@@ -1,0 +1,51 @@
+{
+  "name": "markdownlint-rule-ascii-punctuation",
+  "version": "1.0.0",
+  "description": "A markdownlint rule that reports typographic dashes, curly quotes and ellipses outside quotations",
+  "keywords": [
+    "markdownlint",
+    "markdownlint-rule",
+    "ascii",
+    "typography"
+  ],
+  "homepage": "https://github.com/teadatuntud/markdownlint-rule-ascii-punctuation#readme",
+  "bugs": "https://github.com/teadatuntud/markdownlint-rule-ascii-punctuation/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teadatuntud/markdownlint-rule-ascii-punctuation.git"
+  },
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "main": "./ascii-punctuation.mjs",
+  "exports": "./ascii-punctuation.mjs",
+  "files": [
+    "ascii-punctuation.mjs"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "peerDependencies": {
+    "markdownlint": ">=0.36.0"
+  },
+  "peerDependenciesMeta": {
+    "markdownlint": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "lint": "markdownlint-cli2 && prettier --check '**/*.mjs' && tsc -p jsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "markdownlint": "^0.42.0",
+    "markdownlint-cli2": "^0.24.0",
+    "prettier": "^3.9.10",
+    "typescript": "^7.0.2"
+  },
+  "overrides": {
+    "katex": "^0.18.2",
+    "re2js": "^2.9.1"
+  }
+}
